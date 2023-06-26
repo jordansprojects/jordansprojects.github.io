@@ -1,5 +1,5 @@
 body {
-  font-family: Times;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -55,6 +55,25 @@ html {
   cursor: pointer;
   width: 100%;
 }
+
+ /*************************************************
+      Define .button1 class and its selectors
+    ************************************************/
+    .button1 {
+      display: inline-block;
+      padding: 5px 9px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: black;
+      background-color: ghostwhite;
+      border: none;
+      border-radius: 15x;
+      box-shadow: 0 6px #999;
+    }
+
 
 .button:hover {
   background-color: #555;
