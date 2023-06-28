@@ -1,15 +1,74 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+/* Import JIMAT font for header*/
+@import url('https://fonts.cdnfonts.com/css/jimat');
+
+
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-right:20px;
 }
 
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 0;
+  font-size:13px;
+  font-weight: 900;
+  color: #660000;
+
+}
+
+header {
+  font-family: 'JIMAT', sans-serif;
+  font-weight: 900;
+  font-size:160px;
+ 
+  magin-top:30px;
+  margin-bottom:30px;
+  text-align: center;
+  color:#660000;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color:black;
+}
+
+subheader {
+  font-family: 'JIMAT', sans-serif;
+  font-size:50px;
+  font-weight: 900;
+  text-align: center;
+  color:#660000;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+
+}
+
+
 html {
+  background-color: darkgray;
+
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
 
 .column {
   float: left;
@@ -24,11 +83,7 @@ html {
 }
 
 .about-section {
-  padding: 50px;
   text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
 
 .container {
   padding: 0 16px;
@@ -41,8 +96,10 @@ html {
 }
 
 .title {
-  color: grey;
+  color: black;
 }
+
+
 
 .button {
   border: none;
@@ -56,23 +113,6 @@ html {
   width: 100%;
 }
 
- /*************************************************
-      Define .button1 class and its selectors
-    ************************************************/
-    .button1 {
-      display: inline-block;
-      padding: 5px 9px;
-      font-size: 15px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      outline: none;
-      color: black;
-      background-color: ghostwhite;
-      border: none;
-      border-radius: 15x;
-      box-shadow: 0 6px #999;
-    }
 
 
 .button:hover {
