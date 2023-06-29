@@ -5,29 +5,31 @@
 
 .sidebar {
   height: 100%;
-  width: 200px;
+  width: 25%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: darkslategray;
   overflow-x: hidden;
   padding-top: 20px;
   padding-right:20px;
+  text-align: center;
+  color:black;
 }
 
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+
+.displaced_content {
+    /* margin is the same size as sidebar */
+  margin-left: 25%; 
 }
+
 body {
+    /* margin is the same size as sidebar */
   font-family: "Lucida Console", "Courier New", monospace;
   margin: 0;
-  font-size:13px;
+  font-size:15px;
   font-weight: 900;
   color: #660000;
 
@@ -48,9 +50,8 @@ header {
 
 subheader {
   font-family: 'JIMAT', sans-serif;
-  font-size:50px;
+  font-size:90px;
   font-weight: 900;
-  text-align: center;
   color:#660000;
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:black;
@@ -59,7 +60,7 @@ subheader {
 
 
 html {
-  background-color: darkgray;
+  background-color: #111;
 
   box-sizing: border-box;
 }
