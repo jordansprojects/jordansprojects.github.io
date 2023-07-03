@@ -109,7 +109,7 @@ html {
 
 .about-section {
   text-align: center;
-
+}
 .container {
   padding: 0 16px;
 }
@@ -127,15 +127,19 @@ html {
 
 
 .button {
-  border: none;
-  outline: 0;
   display: inline-block;
-  padding: 8px;
-  color: black;
-  background-color: #000;
-  text-align: center;
+  padding: 10px 15px;
+  font-size: 12px;
   cursor: pointer;
-  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#660000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
 }
 
 
