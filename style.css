@@ -4,13 +4,13 @@
 
 
 .sidebar {
-  height: 50%;
+  height: 60%;
   width: 30%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: white;
+  
   overflow-x: hidden;
   padding-top: 20px;
   padding-right:20px;
@@ -18,11 +18,16 @@
   color:black;
   margin-left: 5%;
   margin-top:10%;
-  border-radius: 25px;
+ 
 }
 
 
-
+.about_me_paragraph{
+  padding-top: 20px;
+  padding-right:20px;
+  background-color: white;
+  border-radius: 25px;
+}
 
 .project_slides{
 
@@ -72,9 +77,9 @@ subheader {
   font-family: 'JIMAT', sans-serif;
   font-size:90px;
   font-weight: 900;
-  color:black;
+  color:#660000;
   -webkit-text-stroke-width:1px;
-  -webkit-text-stroke-color:#660000;
+  -webkit-text-stroke-color:white;
 
 }
 
