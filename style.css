@@ -33,12 +33,12 @@
 
   text-align: center;
   width: 65%;
-  height: 800px;
+  height: 100%;
   margin-left: 17%; 
  
  
   margin-bottom: 25%;
-  overflow:scroll;
+  /*overflow:scroll;*/
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 50px;
