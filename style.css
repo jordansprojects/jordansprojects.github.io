@@ -13,6 +13,7 @@
   overflow-x: hidden;
   overflow-y:hidden;
   padding: 30px;
+  padding-top: 200px;
   text-align: center;
   color:black;
   margin-left: 5%;
@@ -60,7 +61,9 @@ body {
 }
 
 header {
-  font-family: 'JIMAT', sans-serif;
+ /* font-family: 'JIMAT', sans-serif;*/
+ /* lobster font for when im feeling these vibes */
+ font-family: 'Lobster';
   font-weight: 900;
   font-size:160px;
  
@@ -69,12 +72,13 @@ header {
   text-align: center;
   color:#660000;
   -webkit-text-stroke-width:0.025px;
-  -webkit-text-stroke-color:white;
+  -webkit-text-stroke-color:white; 
 }
 
 subheader {
-  font-family: 'JIMAT', sans-serif;
-  font-size:90px;
+  /* font-family: 'JIMAT', sans-serif;*/
+  font-family: 'Lobster';
+  font-size:70px;
   font-weight: 900;
   color:#660000;
   -webkit-text-stroke-width:1px;
