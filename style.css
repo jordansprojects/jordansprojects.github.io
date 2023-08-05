@@ -13,7 +13,7 @@
   overflow-x: hidden;
   overflow-y:hidden;
   padding: 30px;
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: center;
   color:black;
   margin-left: 5%;
@@ -78,7 +78,7 @@ header {
 subheader {
   /* font-family: 'JIMAT', sans-serif;*/
   font-family: 'Lobster';
-  font-size:70px;
+  font-size:60px;
   font-weight: 900;
   color:#660000;
   -webkit-text-stroke-width:1px;
