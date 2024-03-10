@@ -34,8 +34,8 @@
   width: 65%;
   height: 100%;
  
- 
-  margin-bottom: 25%;
+  margin: auto; 
+  /*margin-bottom: 25%;*/
   /*overflow:scroll;*/
   padding-right: 50px;
   padding-left: 50px;
@@ -57,7 +57,7 @@ header {
  /* lobster font for when im feeling these vibes */
  /* font-family: 'Lobster'; */
   font-weight: 900;
-  font-size:125px;
+  font-size:195px;
  
   magin-top:30px;
   margin-bottom:30px;
@@ -80,7 +80,7 @@ subheader {
 
 
 html {
-  background-color: #111;
+  background-color: #0d0d0cf7 ;
 
   box-sizing: border-box;
 }
