@@ -53,18 +53,13 @@ body {
 }
 
 header {
-  font-family: 'JIMAT', sans-serif;
- /* lobster font for when im feeling these vibes */
- /* font-family: 'Lobster'; */
-  font-weight: 900;
-  font-size:195px;
- 
-  magin-top:30px;
-  margin-bottom:30px;
   text-align: center;
-  color:#660000;
-  -webkit-text-stroke-width:0.5px;
-  -webkit-text-stroke-color:white; 
+  font-family: 'JIMAT', sans-serif;
+  color: #660000;
+  font-weight: 900;
+  font-size: calc(10vw);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
 }
 
 subheader {
