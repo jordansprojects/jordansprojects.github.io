@@ -1,32 +1,6 @@
-/* Import JIMAT font for header*/
 @import url('https://fonts.cdnfonts.com/css/jimat');
+@import url('https://fonts.cdnfonts.com/css/press-start-2p');
 
-
-.sidebar {
-  height: 100%;
-  width: 30%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  
-  overflow-x: hidden;
-  overflow-y:hidden;
-  padding: 30px;
-  padding-top: 50px;
-  text-align: center;
-  color:black;
-  margin-left: 5%;
-  margin-top:5%;
-}
-
-
-.about_me_paragraph{
-  padding-top: 10px;
-  padding-right:20px;
-  background-color: white;
-  border-radius: 25px;
-  font-size: 11px;
-}
 
 .project_slides{
 
@@ -44,39 +18,31 @@
 
 body {
     /* margin is the same size as sidebar */
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Press Start 2P', "Lucida Console", "Courier New", monospace;
   margin: 0;
   font-size:15px;
   font-weight: 900;
-  color: #660000;
+  color: #ffb6c1
 
 }
 
+.header-text{
+  color: #ff007f; 
+}
 header {
   text-align: center;
   font-family: 'JIMAT', sans-serif;
-  color: #660000;
+  color: #ffb6c1;
   font-weight: 900;
   font-size: calc(10vw);
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
 }
 
-subheader {
-  font-family: 'JIMAT', sans-serif;
-  /*font-family: 'Lobster';*/
-  font-size:75px;
-  font-weight: 900;
-  color:#660000;
-  -webkit-text-stroke-width:0.5px;
-  -webkit-text-stroke-color:white;
-
-}
 
 
 html {
-  background-color: #0d0d0cf7 ;
-
+  background-color: #000000ee;
   box-sizing: border-box;
 }
 
@@ -84,23 +50,30 @@ html {
   box-sizing: inherit;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust min and max width as needed */
+  grid-gap: 20px; /* spacing between grid items */
+  padding: 20px;
+}
 
-
-
+.card:hover {
+  background-color: #141414; /* Change background color on hover */
+}
 
 .card {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
- 
-  padding-top:15px;
-  padding-left:15px;
-  padding-right:15px;
-
-  padding-bottom: 10px;
-  background-color: white;
+  background-color: #000000;
+  padding: 10px;
   text-align: center;
-  margin-right:30px;
-  margin-bottom: 30px;
-  border-radius: 25px;
+  border-radius: 5px;
+  /* Adjust font size using relative units */
+  font-size: 0.5em;
+  /* Adjust text overflow behavior */
+  word-wrap: break-word; /* Wrap long words */
+  overflow: scroll; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis for long texts */
+  border-radius: 10px;
+  border: 0.4px solid #666;
 }
 
 .about-section {
@@ -124,25 +97,69 @@ html {
 
 .button {
   display: inline-block;
-  padding: 10px 15px;
-  font-size: 12px;
-  cursor: pointer;
-  text-align: center;
+  padding: 2cap 2cap;
+  font-family: 'Press Start 2P';
+  font-size: 1.5em;
+  color: #ffb6c1;
+  background-color: #000; 
+  border: 2px solid #ffb6c1; 
+  border-radius: 5px;
+  text-transform: uppercase;
   text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color:#660000;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
 }
 
+nav {
+  background-color: #666;
+  padding: 10px 0;
+  cursor: pointer;
+}
 
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color:#ff007f; 
+}
+
+.contact-bar {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-bar p {
+  margin: 0;
+}
 
 .button:hover {
-  background-color: #555;
+  background-color: #ff007f; 
+  color: #ffb6c1; 
+  border-color: #ffb6c1 
 }
+
+
 
 @media screen and (max-width: 650px) {
   .column {

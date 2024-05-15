@@ -5,3 +5,4 @@ function openWebPage(url){
 
 	window.open(url,'_blank')
 }
+
