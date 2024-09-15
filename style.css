@@ -20,9 +20,9 @@ body {
     /* margin is the same size as sidebar */
   font-family: 'Press Start 2P', "Lucida Console", "Courier New", monospace;
   margin: 0;
-  font-size:15px;
-  font-weight: 900;
-  color: #ffb6c1
+  font-size: 110%;
+  font-weight: 90;
+  color: white
 
 }
 
@@ -31,12 +31,10 @@ body {
 }
 header {
   text-align: center;
-  font-family: 'JIMAT', sans-serif;
+  font-family: 'Handjet', sans-serif;
   color: #ffb6c1;
-  font-weight: 900;
+  font-weight: 700;
   font-size: calc(10vw);
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
 }
 
 
@@ -55,6 +53,8 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust min and max width as needed */
   grid-gap: 20px; /* spacing between grid items */
   padding: 20px;
+  line-height: 150%;
+  font-size: 20px;
 }
 
 .card:hover {
@@ -70,22 +70,21 @@ html {
   font-size: 0.5em;
   /* Adjust text overflow behavior */
   word-wrap: break-word; /* Wrap long words */
-  overflow: scroll; /* Hide overflowing text */
-  text-overflow: ellipsis; /* Display ellipsis for long texts */
+  overflow: hidden; /* Hide overflowing text */d
   border-radius: 10px;
-  border: 0.4px solid #666;
+  border: 2px solid #666;
+  border-color: limegreen;
+
+
 }
 
-.about-section {
-  text-align: center;
-}
 .container {
   padding: 0 16px;
 }
 
 .container::after, .row::after {
   content: "";
-  clear: both;
+  clear: both;d
   display: table;
 }
 
@@ -100,20 +99,21 @@ html {
   padding: 2cap 2cap;
   font-family: 'Press Start 2P';
   font-size: 1.5em;
-  color: #ffb6c1;
+  color: white;
   background-color: #000; 
-  border: 2px solid #ffb6c1; 
+  border: 2px solid white;
   border-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-color: limegreen;
 
 }
 
 nav {
-  background-color: #666;
+  background-color: limegreen;
   padding: 10px 0;
   cursor: pointer;
 }
@@ -154,9 +154,9 @@ nav ul li a:hover {
 }
 
 .button:hover {
-  background-color: #ff007f; 
-  color: #ffb6c1; 
-  border-color: #ffb6c1 
+  background-color: limegreen;
+  color: #ff007f;
+  border-color: #ff007f;
 }
 
 
