@@ -1,169 +1,167 @@
-@import url('https://fonts.cdnfonts.com/css/jimat');
-@import url('https://fonts.cdnfonts.com/css/press-start-2p');
-
-
-.project_slides{
-
-  text-align: center;
-  width: 65%;
-  height: 100%;
- 
-  margin: auto; 
-  /*margin-bottom: 25%;*/
-  /*overflow:scroll;*/
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 50px;
-}
-
-body {
-    /* margin is the same size as sidebar */
-  font-family: 'Press Start 2P', "Lucida Console", "Courier New", monospace;
-  margin: 0;
-  font-size: 110%;
-  font-weight: 90;
-  color: white
-
-}
-
-.header-text{
-  color: #ff007f; 
-}
-header {
-  text-align: center;
-  font-family: 'Handjet', sans-serif;
-  color: #ffb6c1;
-  font-weight: 700;
-  font-size: calc(10vw);
-}
-
-
-
-html {
-  background-color: #000000ee;
+/* ------ GLOBAL RESET ------ */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+html {
+  background-color: #0a0a0a;
+  color: #ccc;
+  scroll-behavior: smooth;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust min and max width as needed */
-  grid-gap: 20px; /* spacing between grid items */
-  padding: 20px;
-  line-height: 150%;
-  font-size: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #ccc;
+  background-color: #0a0a0a;
 }
 
-.card:hover {
-  background-color: #141414; /* Change background color on hover */
-}
-
-.card {
-  background-color: #000000;
-  padding: 10px;
+/* ------ HEADER ------ */
+header {
   text-align: center;
-  border-radius: 5px;
-  /* Adjust font size using relative units */
-  font-size: 0.5em;
-  /* Adjust text overflow behavior */
-  word-wrap: break-word; /* Wrap long words */
-  overflow: hidden; /* Hide overflowing text */d
-  border-radius: 10px;
-  border: 2px solid #666;
-  border-color: limegreen;
-
-
+  padding: 2rem 1rem;
+  color: #ccc;
+  font-size: clamp(2rem, 7vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;d
-  display: table;
-}
-
-.title {
-  color: black;
-}
-
-
-
-.button {
-  display: inline-block;
-  padding: 2cap 2cap;
-  font-family: 'Press Start 2P';
-  font-size: 1.5em;
-  color: white;
-  background-color: #000; 
-  border: 2px solid white;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  border-color: limegreen;
-
-}
-
+/* ------ NAVIGATION ------ */
 nav {
-  background-color: limegreen;
-  padding: 10px 0;
-  cursor: pointer;
+  background-color: #ffb6c1;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav ul {
-  list-style-type: none;
-  text-align: center;
+  list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
-  
+  display: inline-block;
+  margin: 0 1rem;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #0a0a0a;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
+  transition: color 0.2s ease;
 }
 
 nav ul li a:hover {
+  color: #ffffff;
   text-decoration: underline;
-  color:#ff007f; 
 }
 
-.contact-bar {
-  background-color: #f8f9fa;
-  color: #333;
-  padding: 10px;
+/* ------ ABOUT / PROJECTS ------ */
+.about_me,
+.project_slides {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.about_me {
+  margin: 4rem auto;
+  padding: 2rem;
   text-align: center;
+  color: #ccc;
 }
 
-.contact-bar p {
-  margin: 0;
+.about_me h3 , .project_slides h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #ffb6c1;
+}
+
+
+/* ------ CARDS ------ */
+.card {
+  background-color: #111;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 182, 193, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 16px rgba(255, 182, 193, 0.2);
+}
+
+.card h4 {
+  color: #ccc;
+  margin-top: 0;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ------ BUTTONS ------ */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: transparent;
+  color: #ffb6c1;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: limegreen;
-  color: #ff007f;
-  border-color: #ff007f;
+  background-color: #ffb6c1;
+  color: #0a0a0a;
+  box-shadow: 0 0 12px rgba(255, 182, 193, 0.4);
+  transform: translateY(-2px);
 }
 
 
+/* ------ for centering the button specifically ------ */
+.centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
 
+/* ------ FOOTER ------ */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+/* ------ MEDIA QUERIES ------ */
 @media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
+  nav ul li {
     display: block;
+    margin: 0.5rem 0;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -1,75 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" >
+  <meta charset="utf-8">
   <meta name="viewport" content="width=1280, initial-scale=0.5">
-  <link rel = "stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
   <script src="code.js"></script>
 
-  <header style="text-align:center" class="header-text">Jordan's Projects </header>
+
+
+  <!--- TITLE HEADER-->
+  <header style="text-align:center" class="header-text">jordansprojects.github.io</header>
 </head>
 <nav>
   <ul>
-      <li><a href="https://github.com/jordansprojects">GitHub</a></li>
-      <li><a href="https://jordansprojects.itch.io/">Itch.io</a></li>
-      <li><a href="mailto:jordsvpn@protonmail.com">Email Me</a>
+    <li><a href="https://github.com/jordansprojects">GitHub</a></li>
+    <li><a href="https://jordansprojects.itch.io/">Itch.io</a></li>
+    <li><a href="mailto:jordsvpn@protonmail.com">Email Me</a>
   </ul>
 </nav>
 
+
+<section class="about_me">
+
+    <h3>Hello, I'm Jordan.</h3>
+    <p> I currently work as a software engineer, primarily specializing in test
+      automation.
+      I like to solve problems and create. Both pastimes are very fufilling in my personal and professional life.</p>
+    <p> For the past year or so, I have been helping out a family friend with an ecommerce project. Most of my "freetime coding"
+      has been spent on that. It has been fun and a great learning experience, though I am really looking forward to applying what I've learned into making more games.
+    </p>
+    <p> In the meantime, I hope you enjoy taking a look at projects below. I have improved a lot since creating these. I
+      hold an appreciation for them despite how simple and crude some of them are. They all were really fun to make and I learned a lot in the process.
+    </p>
+
+</section>
+
+
+
+
+<!------ PROJECTS ------>
 <div class="project_slides">
-  <div class ="grid-container">
- <div class="card">
-      <img src="images/CaptureTheFlagSmallLogo.png" alt="Capture The Flag Logo" style="width:100%">
-      <div class="container">
-        <h2> Capture The Flag (Summer 2023) </h2>
-        <p >Strategy Battle Game</p>
-        <p>Created using Unity Game Engine. Collect hearts to win each stage, shoot projectile eyeballs and use special abilities to navigate the  arena stage. </p>
-         <button class="button" onclick="openWebPage('https://jordansprojects.itch.io/capture-the-flag')">Play</button> 
-	 <button class="button" onclick="openWebPage('https://github.com/jordansprojects/Handy-Dandy-Game-Scripts/tree/main/Capture%20The%20Flag')"">Code</button>
-         </div></div>
+  <div>
+  </div>
+  <div class="card">
+    <h3> Capture The Flag (Summer 2023) </h3>
+    <img src="assets/CaptureTheFlagSmallLogo.png" alt="Capture The Flag Logo" style="width:100%">
+    <div class="container">
+
+      <p>A game I created in a week for Kitsch Digital's "Scream Dunk" on Itch.io. Collect hearts to win each stage.
+        Shoot projectile eyeballs and use special abilities to navigate the arena stage. </p>
+      <div class="centered">
+        <button class="button" onclick="openWebPage('https://jordansprojects.itch.io/capture-the-flag')">Play</button>
+
+      </div>
+    </div>
     <div class="card">
-      <img src="images/OnTheFarm.PNG" alt="On The Farm (VR Version) " style="width:100%">
+      <img src="assets/OnTheFarm.PNG" alt="On The Farm (VR Version) " style="width:100%">
       <div class="container">
         <h2>On The Farm (Spring 2023) </h2>
-        <p >Virtual Reality Tower Defense Game</p>
-        <p>Created using Unity Game Engine. Implemented with C# scripts, Emerald AI and VRIF. Completed in half a semester for a Virtual Reality class at University.</p>
-        <button class="button" onclick="openWebPage('https://www.youtube.com/watch?v=k96dSgg4YMI')">Demo Video</button> <button class="button" onclick="openWebPage('https://github.com/jordansprojects/HandyDandyUnityScripts/tree/main/On%20The%20Farm%20Scripts')"> Code</button>
-      </div></div>
+        <p>Virtual Reality Tower Defense Game</p>
+        <p>"On the Farm" was a project for a Virtual Reality programming class I took for my undergrad. It was
+          Implemented using Unity game engine, as well as the Emerald AI and VRIF assets.</p>
 
-  <div class="card">
-      <img src="images/PeerRevue.png" alt="screenshot of PeerRevue application" style="width:100%">
-      <div class="container">
-        <h2>Peer Revue (Spring 2023) </h2>
-        <p >PeerRevue </p>
-        <p>Implemented with Google Apps Scripts using custom HTML, GoogleScript, JavaScript and CSS.  PeerRevue is a cute widget with a point system, customization options, and mini games.<br>
-        Completed in a few weeks for a Software Engineering course at university</p>
-         <button class="button" onclick="openWebPage('https://www.youtube.com/watch?v=m38-cz9HPLo&t=267s')">Demo Video</button> <!--<button>Code</button> -->
+        <div class="centered">
+          <button class="button" onclick="openWebPage('https://youtu.be/IGGRNeweNEM?si=_8LJUnkT-1oyhXyu')">Demo
+            Video</button>
+        </div>
+
       </div>
     </div>
 
     <div class="card">
-      <img src="images/eightpuzzle.PNG" alt="Puzzle and Goblin" style="width:100%">
+      <h3>Peer Revue (Spring 2023) </h3>
+      <img src="assets/PeerRevue.png" alt="screenshot of PeerRevue application" style="width:100%">
       <div class="container">
-        <h2>8-Puzzle Solver & Game (Spring 2019)</h2>
-        <p >An Interactive 8-Puzzle Game and Solver with an Animated Goblin</p>
-        <p>Utilizes a graph search to solve 8-Puzzle. Written in Java using the Swing library for graphics. Completed in a couple weeks for a Data Structures and Algorithms class in community college </p>
-        <button class="button" onclick="openWebPage('https://youtu.be/AHit-rxHQSY')">Demo Video</button> <button class="button" onclick= "openWebPage('https://github.com/jordansprojects/EightPuzzleSolverwVirtualGoblin')"">Code</button>
-      </div>
-    </div>
- 
-<div class="card">
-      <img src="images/PigAutoTech.PNG" alt="Pig Auto Tech Screenshot" style="width:100%">
-      <div class="container">
-        <h2>Pig Auto Tech (Fall 2018) </h2>
-        <p >Be a pig and repair cars</p>
-        <p>A little game written entirely in Java using the Swing library graphics. Completed in 2 weeks for a Java 2 class at community college </p>
-        <button class="button" onclick="openWebPage('https://www.youtube.com/watch?v=HwC6kx18wrU&list=PLNPRt0aqULn2ol0sqoTlUyjcyL-BtfoXE&index=4')">Demo Video</button> 
-      </div>
-    </div>
-  </div><!-- end of grid container-->
-</div> <!-- end of project_slides-->
+        <p>Google Docs extension made to encourage scientists to write papers by gamifying the process.
+          You collect points by typing a lot of words, and other possible productivity markers such as time spent
+          looking at the document. These points can then be used in mini games.
+          We implemented this extension by using the Google Apps Scripts ecosystem, as part of a project for a software
+          engineering course I took for my undergrad.
+        </p>
 
- 
+        <div class="centered">
+          <button class="button" onclick="openWebPage('https://www.youtube.com/watch?v=m38-cz9HPLo&t=267s')">Demo
+            Video</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>8-Puzzle Game & Solver (Spring 2019)</h3>
+      <img src="assets/eightpuzzle.PNG" alt="Puzzle and Goblin" style="width:100%">
+      <div class="container">
+        <p>An Interactive 8-Puzzle Game and Solver with an Animated Goblin to react to the players actions. This program
+          utilizes A* Search Algorithm to solve 8-Puzzle. Written in Java using the Swing library for graphics.
+          Completed in a couple weeks for a Data Structures and Algorithms class in community college </p>
+        <div class="centered">
+          <button class="button" onclick="openWebPage('https://youtu.be/AHit-rxHQSY')">Demo Video</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Pig Auto Tech (Fall 2018) </h3>
+      <img src="assets/PigAutoTech.PNG" alt="Pig Auto Tech Screenshot" style="width:100%">
+      <div class="container">
+        <p> Be a pig and repair cars. A little game written in Java using the Swing library graphics. Completed in 2
+          weeks for a Java 2 class at community college </p>
+
+        <div class="centered">
+          <button class="button"
+            onclick="openWebPage('https://www.youtube.com/watch?v=HwC6kx18wrU&list=PLNPRt0aqULn2ol0sqoTlUyjcyL-BtfoXE&index=4')">Demo
+            Video</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div> <!------ end of project_slides ------> 
